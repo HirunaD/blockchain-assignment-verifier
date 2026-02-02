@@ -65,3 +65,32 @@ A **decentralized application (DApp)** to securely store and verify assignment s
 ```bash
 cd backend
 npm install
+```
+
+2. Create a .env file with your Ganache private key:
+
+```bash
+PRIVATE_KEY=your_ganache_account_private_key
+```
+
+3. Deploy the smart contract to Ganache:
+
+```bash
+npx hardhat run scripts/deploy.js --network ganache
+```
+
+### **Frontend**
+1. Install dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+2. Start the frontend:
+
+```bash
+npm run dev
+```
+
+3. Connect MetaMask to Ganache network and interact with the DApp.
